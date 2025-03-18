@@ -1,0 +1,74 @@
+body{
+    font-family: Montserrat;
+    background: #83af4f;
+}
+
+.body-camouflage{
+    background: #fff;
+}
+
+
+
+
+/* Box Login */
+.box-login{
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+
+.box-login .reverse-login{
+    background-color: #fff;
+    padding: 20px;
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+.box-login .input-group-text{
+    background-color: #83af4f;
+    color: #fff;
+    border: 1px solid #83af4f;
+}
+
+.box-login .btn-login{
+    color: #fff;
+    background-color: #83af4f;
+}
+
+
+
+
+
+/* Navbar */
+.bg-navbar{
+    background-color: #83af4f;
+}
+
+.navbar-color .nav-link{
+    color: #fff !important;
+}
+
+.navbar-color .navbar-brand{
+    color: #fff;
+    font-weight: 200;
+    font-family: Viga;
+}
+
+.navbar-color .navbar-toggler{
+    color: #ffff;
+    border: 1px solid #fff;
+    border-color: #fff;
+}
+
+
+
+
+/* Ideal Box */
+.ideal-box{
+    margin-top: 50px;
+}
+
+.ideal-box .btn-green{
+    color: #fff;
+    background-color: #83af4f;
+    border: 1px solid #83af4f;
+}

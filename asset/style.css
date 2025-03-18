@@ -1,0 +1,297 @@
+body{
+    background-color: #83af4f;
+    font-family: Montserrat;
+}
+
+
+
+/* banner */
+.banner{
+    margin-top: 50px;
+}
+
+.banner .col-lg-6{
+    background-color: #fff;
+    min-height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner h5{
+    color: #000;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+/* Rangger */
+.rangger{
+    margin-top: 40px;
+}
+
+.rangger .col-lg-6{
+    background-color: #fff;
+    min-height: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rangger h5{
+    color: #000;
+    font-weight: 600;
+}
+
+.rangger span{
+    color: #000;
+}
+
+.rangger .progress{
+    margin-top: 10px;
+}
+
+
+/* Bilah Navigasi */
+.bilah-navigasi{
+    margin-top: 40px;
+}
+
+.bilah-navigasi .tab-content{
+    background-color: #fff;
+    color: #000;
+    min-height: 100px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bilah-navigasi .nav{
+    border-bottom: 0;
+}
+
+.bilah-navigasi .nav-item .active{
+    color: #000;
+    font-weight: 600;
+}
+
+.bilah-navigasi .nav-link{
+    color: #000;
+}
+
+.bilah-navigasi .tab-pane{
+    color: #000;
+}
+
+.bilah-navigasi .donate-box{
+    min-height: 50px;
+    padding: 10px;
+}
+
+.bilah-navigasi .donate-set-bg{
+    background-color: #fafbfa;
+}
+
+.bilah-navigasi .donate-top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+
+
+
+/* Donasi */
+.donasi{
+    margin-top: 40px;
+}
+
+.donasi .set-bg{
+    background-color: #eaeaea;
+    min-height: 80px;
+    padding-top: 30px;
+}
+
+.donasi .radius-border{
+    border-top-right-radius: 10px;
+}
+
+.donasi .non-set-bg{
+    background-color: #fff;
+    min-height: 50px;
+    padding: 20px;
+}
+
+.donasi .btn-outline-danger{
+    width: 100%;
+    font-size: 13px;
+}
+
+.donasi .bg-danger{
+    color: #fff;
+    border: 1px solid #dc3545;
+    font-size: 14px;
+}
+
+
+
+
+
+
+/* Donatur */
+.donatur{
+    margin-top: 40px;
+}
+
+.donatur .set-bg{
+    background-color: #eaeaea;
+    min-height: 80px;
+    padding-top: 30px;
+}
+
+.donatur .radius-border{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.donatur .non-set-bg{
+    background-color: #fff;
+    min-height: 50px;
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.donatur .form-label{
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.donatur .form-control{
+    color: #000;
+    font-size: 14px;
+    height: 50px;
+}
+
+.donatur .form-check{
+    border: 1px solid #000;
+    padding-left: 40px;
+    border-radius: 10px;
+    min-height: 90px;
+}
+
+.donatur .form-check-label{
+    padding: 20px;
+}
+
+.donatur .btn-donatur{
+    background-color: green;
+    color: #fff;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+/* Footer */
+.footer{
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+/* CheckOut */
+.checkout{
+    margin-top: 50px;
+}
+
+.checkout .runder{
+    background-color: #fff;
+    min-height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.checkout .heading-checkout{
+    color: #000;
+    font-weight: 600;
+}
+
+.checkout .check-paragraph{
+    color: #000;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.checkout .boxer-under{
+    background-color: #eaeaea;
+    padding: 20px;
+    min-height: 100px;
+}
+
+.checkout .boxer-under2{
+    background-color: #fff;
+    padding: 20px;
+    min-height: 100px;
+}
+
+.checkout .box-under3{
+    background-color: #fff;
+    padding: 20px;
+    min-height: 300px;
+}
+
+.checkout .box-under3 .row{
+    margin-top: 30px;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 40px;
+}
+
+
+
+.checkout .box-under4{
+    margin-top: 50px;
+}
+
+.checkout .box-under10{
+    background-color: rgb(232, 175, 70);
+    padding: 20px;
+    min-height: 20px;
+}
+
+.checkout .box-under11{
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.checkout .box-under11 .row{
+    border-top: 1px solid #eaeaea;
+}
+
+
+.checkout .btn-green{
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    font-size: 25px;
+    width: 100%;
+}

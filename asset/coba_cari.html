@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian dan Filter Tabel</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pencarian dan Filter Data</h2>
+    <label for="search">Cari: </label>
+    <input type="text" id="search" placeholder="Masukkan kata kunci...">
+    
+    <label for="entries">Tampilkan: </label>
+    <select id="entries">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="-1">Semua</option>
+    </select>
+    
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Alice</td><td>alice@example.com</td></tr>
+            <tr><td>2</td><td>Bob</td><td>bob@example.com</td></tr>
+            <tr><td>3</td><td>Charlie</td><td>charlie@example.com</td></tr>
+            <tr><td>4</td><td>David</td><td>david@example.com</td></tr>
+            <tr><td>5</td><td>Emma</td><td>emma@example.com</td></tr>
+            <tr><td>6</td><td>Frank</td><td>frank@example.com</td></tr>
+            <tr><td>7</td><td>Grace</td><td>grace@example.com</td></tr>
+            <tr><td>8</td><td>Hannah</td><td>hannah@example.com</td></tr>
+            <tr><td>9</td><td>Ian</td><td>ian@example.com</td></tr>
+            <tr><td>10</td><td>Jack</td><td>jack@example.com</td></tr>
+        </tbody>
+    </table>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById("search");
+            const table = document.getElementById("dataTable");
+            const rows = table.getElementsByTagName("tr");
+            const entriesSelect = document.getElementById("entries");
+            
+            function filterTable() {
+                const searchText = searchInput.value.toLowerCase();
+                let visibleCount = 0;
+                for (let i = 1; i < rows.length; i++) {
+                    const cells = rows[i].getElementsByTagName("td");
+                    let rowVisible = false;
+                    for (let j = 0; j < cells.length; j++) {
+                        if (cells[j].textContent.toLowerCase().includes(searchText)) {
+                            rowVisible = true;
+                            break;
+                        }
+                    }
+                    rows[i].style.display = rowVisible ? "" : "none";
+                    if (rowVisible) visibleCount++;
+                }
+                updateEntries(visibleCount);
+            }
+            
+            function updateEntries(visibleCount) {
+                let maxEntries = parseInt(entriesSelect.value);
+                let count = 0;
+                for (let i = 1; i < rows.length; i++) {
+                    if (rows[i].style.display !== "none") {
+                        count++;
+                        rows[i].style.display = count <= maxEntries || maxEntries === -1 ? "" : "none";
+                    }
+                }
+            }
+            
+            searchInput.addEventListener("keyup", filterTable);
+            entriesSelect.addEventListener("change", () => updateEntries(rows.length - 1));
+        });
+    </script>
+</body>
+</html>
