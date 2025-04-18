@@ -1,1 +1,1 @@
-Ini source code web donasi yang tidak digunakan, alias tidak dihargai lagi sama orang yang minta tolong untuk dibuatkan. Padahal udah niat banget buat webnya selama seminggu. Saya kira web donasi hibah ini akan digunakan sebagaimana mestinya. Eh, ternyata nggak disebarin. Kan nggak sopan.
+Ini adalah source code web donasi pembebasan lahan yang Saya buat untuk digunakan sebagaimana mestinya kepada semua yayasan/lembaga/lainnya yang membutuhkan.
